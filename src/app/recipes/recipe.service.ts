@@ -25,4 +25,12 @@ export class RecipeService {
     getRecipes() {
         return this.recipes.slice();
     }
+
+    getRecipe(index: number) {        
+        return this.recipes[index];
+    }
+
+    getRecipeId(recipe: Recipe){
+        return this.recipes.indexOf(recipe);
+    }
 }
